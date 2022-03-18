@@ -1,0 +1,121 @@
+:root{
+--vermelho: RGB(229, 9, 20);
+--preto: RGB(20, 20, 20);
+--branco: RGB(229, 229, 229);
+--cinza: RGB(179, 179, 179);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--branco)
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+color: var(--vermelho);
+font-family: 'Arial Black', Times;
+font-size: 40px;
+margin-left: 5px;
+
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--branco);
+    margin-right: 10px;
+    font-family: 'Trebuchet MS', Arial;
+}
+
+header nav a:hover{
+    color: var(--cinza);
+}
+
+.filme-principal {
+    color: var(--branco);
+    font-size: 20px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(/assets/img/itn-capa.jpg);
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .container{
+    width: 40%;
+}
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.filme-principal .titulo {
+font-size: 40px;
+margin-top: 10%;
+font-family: 'Trebuchet MS', Arial;
+}
+.filme-principal .button-assistir{
+background-color: rgba(255,255,255);
+padding: 12px 30px;
+border-radius:5px;
+font-size: 16px;
+margin-right: 5px;
+cursor: pointer;
+transition: .3s ease all;
+font-family:'Trebuchet MS', Arial, sans-serif;
+}
+.filme-principal .button-maisinfo{
+background-color: rgba(89,93,94);
+color: rgba(255,255,255);
+padding: 12px 30px;
+border-radius:5px;
+font-size: 16px;
+margin-right: 5px;
+cursor: pointer;
+transition: .3s ease all;
+font-family:'Trebuchet MS', Arial, sans-serif;
+}
+
+.button-assistir:hover {
+    background-color: rgba(255,255,255,.80);
+}
+.button-maisinfo:hover {
+    background-color: rgba(89,93,94,.80);
+}
+
+.button-assistir i {
+    margin-right: 8px;
+}
+
+.button-maisinfo i {
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.box-filme{
+    height: 1051px;
+    width: 788px;
+    display:block;
+}
+
+.titulo-carrossel{
+    margin: 20px;
+    font-family: 'Trebuchet MS', Arial;
+    font-size: 25px;
+}
